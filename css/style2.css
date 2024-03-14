@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 /*___General Styles ___*/
 * {
@@ -386,6 +387,7 @@ footer.footer div.element__footer div {
     margin: 0;
   }
   div.body section.Menu {
+    height: auto;
     padding: 0;
     min-height: 260vh;
     position: relative;
@@ -405,6 +407,7 @@ footer.footer div.element__footer div {
     align-items: center;
     height: 7rem;
     gap: 1rem;
+    width: 100%;
     min-width: 250px;
     background-color: rgba(241, 241, 241, 0.9450980392);
     border-radius: 2rem;
@@ -473,5 +476,111 @@ footer.footer div.element__footer div {
   }
   footer.footer div.element__footer {
     flex-direction: column;
+  }
+}
+@media screen and (max-width: 768px) and (min-width: 992px) {
+  /* règles CSS à appliquer lorsque la largeur de l'écran est superieur ou égale à 768px */
+  div.body {
+    position: relative;
+  }
+  div.body div.image__menu2 {
+    z-index: 2;
+    margin: 0;
+  }
+  div.body div.image__menu3 {
+    z-index: 2;
+    margin: 0;
+  }
+  div.body div.image__menu4 {
+    z-index: 2;
+    margin: 0;
+  }
+  div.body div.image__menu1 {
+    z-index: 2;
+    margin: 0;
+  }
+  div.body section.Menu {
+    height: auto;
+    padding: 0;
+    min-height: 260vh;
+    position: relative;
+    width: 100%;
+    z-index: 4;
+  }
+  div.body section.Menu div.Menu {
+    padding: 0;
+    width: 100%;
+  }
+  div.body section.Menu div.entrees__list {
+    position: relative;
+  }
+  div.body section.Menu div.entrees__list__items {
+    padding: 0 0;
+    display: flex;
+    align-items: center;
+    height: 7rem;
+    gap: 1rem;
+    width: 100%;
+    min-width: 250px;
+    background-color: rgba(241, 241, 241, 0.9450980392);
+    border-radius: 2rem;
+    box-shadow: 12px 1px 10px 10px rgb(230, 227, 227);
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+    white-space: nowrap;
+    animation: aparution ease 2s;
+    position: relative;
+  }
+  div.body section.Menu div.entrees__list__items div.entrees__list__items__text {
+    display: flex;
+    gap: 2rem;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+  div.body section.Menu div.entrees__list__items div.entrees__list__items__text div.text {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+  div.body section.Menu div.entrees__list__items div.entrees__list__items__text h3.entrees__list__items__text__title {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+  div.body section.Menu div.entrees__list__items div.entrees__list__items__text p {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+  div.body section.Menu div.entrees__list__items div.entrees__list__items__reavel {
+    position: absolute;
+    right: 0;
+    min-width: 100px;
+    height: 100%;
+    background-color: #99e2d0;
+    border-radius: 0 2rem 2rem 0;
+    text-align: center;
+    padding: 2rem 1rem;
+    transition: all 0.8s ease-in-out;
+    transform: translateX(100%);
+  }
+  div.body section.Menu div.entrees__list__items div.entrees__list__items__reavel p {
+    width: 3rem;
+    height: 3rem;
+    background-color: white;
+    border-radius: 50%;
+    color: #99e2d0;
+    padding: 0.5rem 0;
+  }
+  div.body section.Menu div.entrees__list__items div.entrees__list__items__reavel p i {
+    font-size: 2rem;
+  }
+  div.body section.Menu div.entrees__list__items:hover div.entrees__list__items__reavel {
+    transform: translateX(0);
+  }
+  div.body section.Menu div.entrees__list__items:hover div.entrees__list__items__reavel i {
+    transform: rotate(0deg);
   }
 }/*# sourceMappingURL=style2.css.map */
