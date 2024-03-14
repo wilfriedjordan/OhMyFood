@@ -407,7 +407,6 @@ footer.footer div.element__footer div {
     align-items: center;
     height: 7rem;
     gap: 1rem;
-    width: 100%;
     min-width: 250px;
     background-color: rgba(241, 241, 241, 0.9450980392);
     border-radius: 2rem;
@@ -417,7 +416,6 @@ footer.footer div.element__footer div {
     overflow: hidden;
     white-space: nowrap;
     animation: aparution ease 2s;
-    position: relative;
   }
   div.body section.Menu div.entrees__list__items div.entrees__list__items__text {
     display: flex;
