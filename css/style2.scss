@@ -112,6 +112,10 @@ section.Menu {
   /**____DIV entrees _____**/
   div.entrees {
     padding: 2rem;
+    div.entrees__list__items__text{
+      display: flex;
+      gap: 15px;
+    }
     h2.entrees__title {
       font-size: 1.2rem;
       position: relative;
@@ -136,9 +140,8 @@ section.Menu {
     width: 100%;
     &__items {
       display: flex;
-      justify-content: flex-start;
       align-items: center;
-      padding: 0 20rem;
+      padding: 0 15rem;
       height: 7rem;
       gap: 1.5rem;
       width: 100%;
@@ -149,6 +152,11 @@ section.Menu {
       cursor: pointer;
       overflow: hidden;
       animation: aparution ease 2s;
+      div.entrees__list__items__text{
+        div.text{
+          line-height: 1.5rem;
+        }
+      }
       div.entrees__list__items__reavel {
         position: absolute;
         right: 0;
@@ -419,7 +427,7 @@ footer.footer {
       div.entrees__list{
         position: relative;
         &__items{
-          padding:0 0;
+          padding:0 1rem;
           display: flex;
           align-items: center;
           height: 7rem;
@@ -499,7 +507,7 @@ footer.footer {
   }
 }
 
-@media screen and (max-width:768px) and (min-width:992px){
+@media screen and (min-width:768px) and (max-width:992px){
   /* règles CSS à appliquer lorsque la largeur de l'écran est superieur ou égale à 768px */
   div.body{
     position:relative;
@@ -520,6 +528,7 @@ footer.footer {
       margin: 0;
     }
     section.Menu{
+    
       height: auto;
       padding: 0;
       min-height: 260vh;
@@ -536,7 +545,6 @@ footer.footer {
         &__items{
           padding:0 0;
           display: flex;
-          align-items: center;
           height: 7rem;
           gap: 1rem;
           

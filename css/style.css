@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 /*___General Styles ___*/
 * {
@@ -87,7 +88,7 @@ section.description div.description__text a {
 /**_____Section fontionnememt____ **/
 section.fontionnement {
   height: auto;
-  margin: 1rem 15rem;
+  margin: 1rem 10rem;
 }
 section.fontionnement h1.fontionnement__title {
   font-size: 1.5rem;
@@ -140,7 +141,7 @@ section.fontionnement div.fontionnement__list div.fontionnement__list__items:hov
 
 section.restaurants {
   height: auto;
-  margin: 3rem 15rem;
+  margin: 3rem 3rem;
 }
 section.restaurants h1.restaurants__title {
   font-size: 1.5rem;
@@ -326,7 +327,7 @@ footer.footer div.element__footer div {
   }
   section.restaurants {
     height: auto;
-    margin: 3rem 1rem;
+    margin: 3rem 2rem;
   }
   section.restaurants div.container {
     display: flex;
@@ -346,5 +347,56 @@ footer.footer div.element__footer div {
   }
   footer.footer div.element__footer {
     flex-direction: column;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  /* règles CSS à appliquer lorsque la largeur de l'écran est superieur ou égale à 768px */
+  section.restaurants {
+    height: auto;
+    margin: 3rem 15px;
+    text-align: center;
+  }
+  section.restaurants div.container {
+    display: flex;
+    height: auto;
+    background-color: rgba(241, 241, 241, 0.9450980392);
+    display: grid;
+    height: auto;
+    grid-template-columns: repeat(2, 2fr);
+    gap: 10px;
+    padding: 1rem;
+    border-radius: 2rem;
+  }
+  section.restaurants div.container div.element {
+    width: 100%;
+    min-height: 10rem;
+    height: 18rem;
+  }
+  section.restaurants div.container div.element div.element__image {
+    width: 100%;
+  }
+  section.fontionnement {
+    height: auto;
+    text-align: center;
+    margin: 1rem 3rem;
+  }
+}
+@media screen and (min-width: 992px) {
+  section.fontionnement {
+    text-align: center;
+  }
+  section.restaurants {
+    text-align: center;
+  }
+  section.restaurants div.container {
+    grid-template-columns: repeat(3, 2fr);
+  }
+  section.restaurants div.container div.element {
+    width: 100%;
+    min-height: 10rem;
+    height: 18rem;
+  }
+  section.restaurants div.container div.element div.element__image {
+    width: 100%;
   }
 }/*# sourceMappingURL=style.css.map */

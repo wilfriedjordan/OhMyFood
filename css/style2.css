@@ -107,6 +107,10 @@ section.Menu div.Menu__like p.element__text__like:hover i {
 section.Menu div.entrees {
   padding: 2rem;
 }
+section.Menu div.entrees div.entrees__list__items__text {
+  display: flex;
+  gap: 15px;
+}
 section.Menu div.entrees h2.entrees__title {
   font-size: 1.2rem;
   position: relative;
@@ -131,9 +135,8 @@ section.Menu div.entrees__list {
 }
 section.Menu div.entrees__list__items {
   display: flex;
-  justify-content: flex-start;
   align-items: center;
-  padding: 0 20rem;
+  padding: 0 15rem;
   height: 7rem;
   gap: 1.5rem;
   width: 100%;
@@ -144,6 +147,9 @@ section.Menu div.entrees__list__items {
   cursor: pointer;
   overflow: hidden;
   animation: aparution ease 2s;
+}
+section.Menu div.entrees__list__items div.entrees__list__items__text div.text {
+  line-height: 1.5rem;
 }
 section.Menu div.entrees__list__items div.entrees__list__items__reavel {
   position: absolute;
@@ -402,7 +408,7 @@ footer.footer div.element__footer div {
     position: relative;
   }
   div.body section.Menu div.entrees__list__items {
-    padding: 0 0;
+    padding: 0 1rem;
     display: flex;
     align-items: center;
     height: 7rem;
@@ -477,7 +483,7 @@ footer.footer div.element__footer div {
     flex-direction: column;
   }
 }
-@media screen and (max-width: 768px) and (min-width: 992px) {
+@media screen and (min-width: 768px) and (max-width: 992px) {
   /* règles CSS à appliquer lorsque la largeur de l'écran est superieur ou égale à 768px */
   div.body {
     position: relative;
@@ -516,7 +522,6 @@ footer.footer div.element__footer div {
   div.body section.Menu div.entrees__list__items {
     padding: 0 0;
     display: flex;
-    align-items: center;
     height: 7rem;
     gap: 1rem;
     width: 100%;

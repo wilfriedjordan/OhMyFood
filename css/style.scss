@@ -98,7 +98,7 @@ section.description{
 
 section.fontionnement{
    height: auto;
-      margin: 1rem 15rem;
+      margin: 1rem 10rem;
 
    h1.fontionnement__title{
       font-size: 1.5rem;
@@ -152,7 +152,7 @@ section.fontionnement{
 
 section.restaurants{
    height: auto;
-   margin: 3rem 15rem;
+   margin: 3rem 3rem;
    h1.restaurants__title{
       font-size: 1.5rem;
       font-family: 'Shrikhand', serif;
@@ -352,7 +352,7 @@ footer.footer{
    }
    section.restaurants{
       height: auto;
-      margin: 3rem 1rem;
+      margin: 3rem 2rem;
       div.container{
          display: flex;
          height: auto;
@@ -373,6 +373,61 @@ footer.footer{
       flex-wrap: wrap;
       div.element__footer{
          flex-direction: column;
+      }
+   }
+}
+
+@media screen and (min-width: 768px) and (max-width:992px){
+  /* règles CSS à appliquer lorsque la largeur de l'écran est superieur ou égale à 768px */
+
+   section.restaurants{
+      height: auto;
+      margin: 3rem 15px;
+      text-align: center;
+      div.container{
+         display: flex;
+         height: auto;
+         background-color: #f1f1f1f1;
+         display: grid;
+         height: auto;
+         grid-template-columns: repeat(2, 2fr);
+         gap: 10px;
+         padding: 1rem;
+         border-radius: 2rem;
+         //flex-direction: column;
+         div.element{
+            width: 100%;
+            min-height: 10rem;
+            height: 18rem;
+            div.element__image{
+               width: 100%;   
+            }
+         }
+      }
+   }
+   section.fontionnement{
+      height: auto;
+      text-align: center;
+      margin: 1rem 3rem;
+   }
+}
+
+@media screen and (min-width:992px) {
+   section.fontionnement{
+      text-align: center;
+   }
+   section.restaurants{
+      text-align: center;
+      div.container{
+         grid-template-columns: repeat(3, 2fr);
+         div.element{
+            width: 100%;
+            min-height: 10rem;
+            height: 18rem;
+            div.element__image{
+               width: 100%;   
+            }
+         }
       }
    }
 }
