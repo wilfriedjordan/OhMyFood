@@ -113,6 +113,8 @@ section.Menu {
   div.entrees {
     padding: 2rem;
     div.entrees__list__items__text{
+      width: 100%;
+      transition: width 0.8s ease-in-out;
       display: flex;
       gap: 15px;
     }
@@ -154,11 +156,6 @@ section.Menu {
       text-overflow: ellipsis;
       white-space: nowrap;
       animation: aparution ease 2s;
-      div.entrees__list__items__text{
-        div.text{
-          line-height: 1.5rem;
-        }
-      }
       div.entrees__list__items__reavel {
         position: absolute;
         right: 0;
@@ -222,10 +219,7 @@ section.Menu {
       transform: rotate(0deg);
     }
     &__items:hover div.entrees__list__items__text{
-      max-width: 60%;
-      overflow: hidden;
-      text-overflow: ellipsis;
-      white-space: nowrap;
+      width: 60%;
     }
     @keyframes aparution {
       from{
@@ -241,6 +235,12 @@ section.Menu {
 
   /**____DIV plats _____**/
   div.Plats {
+    div.entrees__list__items__text{
+      width: 100%;
+      transition: width 0.8s ease-in-out;
+      display: flex;
+      gap: 15px;
+    }
     padding: 2rem;
     h2.entrees__title {
       font-size: 1.2rem;
@@ -283,6 +283,12 @@ section.Menu {
   }
   /**____DIV desserts _____**/
   div.desserts {
+    div.entrees__list__items__text{
+      width: 100%;
+      transition: width 0.8s ease-in-out;
+      display: flex;
+      gap: 15px;
+    }
     padding: 2rem;
     h2.entrees__title {
       font-size: 1.2rem;

@@ -108,6 +108,8 @@ section.Menu div.entrees {
   padding: 2rem;
 }
 section.Menu div.entrees div.entrees__list__items__text {
+  width: 100%;
+  transition: width 0.8s ease-in-out;
   display: flex;
   gap: 15px;
 }
@@ -149,9 +151,6 @@ section.Menu div.entrees__list__items {
   text-overflow: ellipsis;
   white-space: nowrap;
   animation: aparution ease 2s;
-}
-section.Menu div.entrees__list__items div.entrees__list__items__text div.text {
-  line-height: 1.5rem;
 }
 section.Menu div.entrees__list__items div.entrees__list__items__reavel {
   position: absolute;
@@ -215,10 +214,7 @@ section.Menu div.entrees__list__items:hover div.entrees__list__items__reavel i {
   transform: rotate(0deg);
 }
 section.Menu div.entrees__list__items:hover div.entrees__list__items__text {
-  max-width: 60%;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
+  width: 60%;
 }
 @keyframes aparution {
   from {
@@ -231,6 +227,12 @@ section.Menu div.entrees__list__items:hover div.entrees__list__items__text {
 }
 section.Menu div.Plats {
   padding: 2rem;
+}
+section.Menu div.Plats div.entrees__list__items__text {
+  width: 100%;
+  transition: width 0.8s ease-in-out;
+  display: flex;
+  gap: 15px;
 }
 section.Menu div.Plats h2.entrees__title {
   font-size: 1.2rem;
@@ -271,6 +273,12 @@ section.Menu div.plats__list__items {
 }
 section.Menu div.desserts {
   padding: 2rem;
+}
+section.Menu div.desserts div.entrees__list__items__text {
+  width: 100%;
+  transition: width 0.8s ease-in-out;
+  display: flex;
+  gap: 15px;
 }
 section.Menu div.desserts h2.entrees__title {
   font-size: 1.2rem;
