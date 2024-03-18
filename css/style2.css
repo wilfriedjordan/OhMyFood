@@ -146,6 +146,8 @@ section.Menu div.entrees__list__items {
   position: relative;
   cursor: pointer;
   overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
   animation: aparution ease 2s;
 }
 section.Menu div.entrees__list__items div.entrees__list__items__text div.text {
@@ -211,6 +213,12 @@ section.Menu div.entrees__list__items:hover div.entrees__list__items__reavel {
 }
 section.Menu div.entrees__list__items:hover div.entrees__list__items__reavel i {
   transform: rotate(0deg);
+}
+section.Menu div.entrees__list__items:hover div.entrees__list__items__text {
+  max-width: 60%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 @keyframes aparution {
   from {

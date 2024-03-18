@@ -151,6 +151,8 @@ section.Menu {
       position: relative;
       cursor: pointer;
       overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
       animation: aparution ease 2s;
       div.entrees__list__items__text{
         div.text{
@@ -218,6 +220,12 @@ section.Menu {
     }
     &__items:hover div.entrees__list__items__reavel i {
       transform: rotate(0deg);
+    }
+    &__items:hover div.entrees__list__items__text{
+      max-width: 60%;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
     }
     @keyframes aparution {
       from{
